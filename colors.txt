@@ -1,0 +1,4 @@
+1. background: #101928
+2. Get in touch bg: #00c9ae
+3. red: f01190
+4. orange: ee970e

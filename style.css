@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #101928;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#logo {
+  height: 40px;
+  width: 50px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.nav-bar {
+  width: 35%;
+  list-style-type: none;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-bar li {
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.search p {
+  margin-left: -30%;
+  color: #fff;
+  font-family: inherit;
+  font-weight: inherit;
+  padding-top: 2px;
+}
+.search input {
+  width: 200px;
+  border-radius: 30px;
+  height: 30px;
+  border: 2px solid #00c9ae;
+  background: inherit;
+}
+.search-icon {
+  display: none;
+}
+.search img {
+  margin: -5px 0px 0 10px;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.banner .welcome-message {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.banner .image {
+  width: 40%;
+  height: 70vh;
+  background: linear-gradient(10deg, #00feba, #5b548a);
+  border-radius: 100%;
+  background-size: 100px;
+}
+.banner .image img {
+  height: 75vh;
+  width: 100%;
+  margin-top: -10%;
+  margin-left: -2%;
+}
+
+.welcome-message .social-media {
+  height: 20px;
+  width: 30%;
+}
+.welcome-message .social-media img {
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.welcome-message .get-in-touch button {
+  width: 40%;
+  height: 30px;
+  font-weight: 600;
+  background: #00c9ae;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.welcome-message .intro p {
+  color: #fff;
+  font-family: inherit;
+  opacity: 40%;
+}
+.welcome-message .header {
+  color: #fff;
+}
+
+.company-service {
+  color: #fff;
+  text-align: right;
+  margin-right: 40px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.company-service img {
+  width: 200px;
+  opacity: 30%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+  .banner {
+    justify-content: space-around;
+  }
+
+  .banner .welcome-message {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+  .welcome-message .intro p {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  .welcome-message .header {
+    color: #fff;
+  }
+
+  .banner .image {
+    width: 40%;
+    height: 70vh;
+  }
+  .banner .image img {
+    height: 70vh;
+    width: 200px;
+  }
+  .search img {
+    height: 35px;
+  }
+  .company-service img {
+    width: 100px;
+    opacity: 30%;
+  }
+  .search-icon img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+  .search-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+  .search p {
+    display: none;
+  }
+  .search input {
+    display: none;
+  }
+  .company-service {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+  .banner .welcome-message {
+    font-size: 10px;
+  }
+  .banner .image {
+    width: 50%;
+    height: 70vh;
+    background: none;
+  }
+  .banner .image img {
+    height: 40vh;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+  }
+  .welcome-message .get-in-touch button {
+    width: 70%;
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .welcome-message .social-media {
+    display: none;
+  }
+}
